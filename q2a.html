@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" > 
+        <link rel="stylesheet" href="q2a.css">
+        <title>New announcements page</title>
+    </head>
+    <body>
+        <header><h1>Announcements</h1>
+            <h4>Add a new announcement</h4>
+            <img src="ou_logo.png" alt="The open university logo" style="width:100px;height:70px;">
+      </header>
+        <nav aria-label="Main menu">
+      <ul>
+        <li>
+          <a href="option1.html">Home</a>
+        </li>
+        <li>
+          <a href="option2.html">Membership</a>
+        </li>
+        <li>
+          <a href="option3.html">Announcements</a>
+        </li>
+        <li>
+          <a href="option4.html">News</a>
+        </li>
+        <li>
+          <a href="option5.html">Walk Events</a>
+        </li>
+        <li>
+          <a href="option6.html">Other Events</a>
+        </li>
+      </ul>
+    </nav>
+        <main>
+        <form>
+        <input type="hidden" id="sessionID" name="sessionID" value="1234abcd-5678-9090-efef">
+      </form>
+        <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form1" name="form1">
+        </form>
+         <fieldset>
+        <form>
+             <legend><p><label for="mytext1">Announcement title</label>
+                 <input type="text" name="mytext1" id="mytext1"  required maxlength="30" minlength="5" value=""></p></legend> 
+        </form>
+             <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form8" name="form8">
+               <input type="checkbox" name="consent" id="consent" value="consent" checked><label for="consent">  Send to consenting users as email</label><br>
+        </form>
+
+             <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form6" name="form6">
+            <p><label for="date">Select the date of first showing </label>
+            <select name="date" id="date" >
+               <option value="">First showing date</option>
+               <option value="12/06/2021">12/06/2021</option>
+               <option value="13/06/2021">13/06/2021</option>
+               <option value="14/06/2021">14/06/2021</option>
+               <option value="15/06/2021">15/06/2021</option>
+            </select>
+         </form>
+             <form>
+             <p>
+                 <label for="date">Select the date of last showing </label>
+            <select name="date2" id="date2" >
+               <option value="">Last showing date</option>
+               <option value="12/07/2021">01/07/2021</option>
+               <option value="13/07/2021">02/07/2021</option>
+               <option value="14/07/2021">03/07/2021</option>
+               <option value="15/07/2021">04/07/2021</option>
+            </select>
+             </p>
+         </form>
+             <form>
+             <p>
+                 <label for="attachment">Add attachment</label>
+                <input type="file"
+       id="attachment" name="attachment"
+       accept="image/png, image/jpeg"> </p></form>
+             
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form2" name="form2" >
+            <p>
+            <textarea name="mytextarea2" id="mytextarea2" rows="10" cols="30" >Insert text here, use no more than 400 characters.
+            </textarea></p>
+             </form>
+             </fieldset>
+            <input type="submit" name="submit" value="Submit">
+            <input type="button" name="Edit" value="Edit">
+        </main>
+    </body>
+</html>
