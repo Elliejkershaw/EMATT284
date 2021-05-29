@@ -33,7 +33,7 @@ nav a {
     height: auto;
 }
 
-.nav a:hover {
+li a:hover {
     background-color: darkblue;
     color: white;
 
